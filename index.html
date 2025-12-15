@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width,
    initial-scale=1.0">
   <title>Audio Visualizer - Proiect Multimedia</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
   <link rel="stylesheet" href="style.css"> 
+
 </head>
 <body>
 
@@ -13,8 +18,16 @@
     <canvas id="audioCanvas"></canvas> 
     
     <div id="audio-controls">
+      <button type="button" id="btnPlay" class="btn btn-light">
+        <i class="bi bi-play-fill"></i>
+      </button>
+      
+    </div>
+
+    <div id="audio-input">
       <label for="audioFile">Load audio file:</label>
       <input type="file" id="audioFile" accept="audio/*"> 
+
     </div>
   </div>
 
